@@ -16,14 +16,12 @@ Para instalar o opencv, no terminal digite:
 
 ```
 $ pip install opencv-python
-
 ```
 
 Caso qualquer biblioteca apresente problema de não ser encontrada na hora da execução use o mesmo.
 
 ```
 $ pip install nome_da_biblioteca
-
 ```
 
 #### Executando o script
@@ -32,7 +30,6 @@ Basta ir na pasta pelo terminal e rodar, para parar a executação digite `q` na
 
 ```
 $ python3 color_tracking.py  
-
 ```
 
 #### Debugando sem precisar da Unity
@@ -41,7 +38,7 @@ Para debugar sem utilizar da Unity, pode rodar este servidor aqui em outro termi
 
 https://github.com/ezefranca/socket-demo/blob/master/servidor.py
 
-![](/demo.gif)
+![](https://raw.githubusercontent.com/ezefranca/mestrado-volante/master/controlador/demo.gif)
 
 
 
