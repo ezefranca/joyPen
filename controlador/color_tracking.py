@@ -38,8 +38,9 @@ while True:
 	if frame is None:
 		break
 
-	# Redimensiona o frame atual e aplica um filtro Gaussiano
+	# Redimensiona e flipa o frame atual e aplica um filtro Gaussiano
 	frame = imutils.resize(frame, width=600)
+	frame = cv2.flip(frame, 1)
 	blurred = cv2.GaussianBlur(frame, (11, 11), 0)
 	hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
 
@@ -78,7 +79,7 @@ while True:
 			# Desenha o circulo do primeiro
 			cv2.circle(frame, (int(x), int(y)), int(radius1),
 				(0, 255, 255), 2)
-			cv2.circle(frame, center1, 5, (0, 0, 255), -1)
+			cv2.circle(frame, center1, 5, (0, 255, 255), -1)
 
 		((x, y), radius2) = cv2.minEnclosingCircle(c2)
 		M = cv2.moments(c2)
@@ -89,7 +90,7 @@ while True:
 			# Desenha o circulo do segundo
 			cv2.circle(frame, (int(x), int(y)), int(radius2),
 				(0, 255, 255), 2)
-			cv2.circle(frame, center2, 5, (0, 0, 255), -1)
+			cv2.circle(frame, center2, 5, (0, 255, 255), -1)
 
 		# desenho uma linha do centro de um circulo no outro
 		cv2.line(frame, center1, center2, (0, 0, 255), 5)
@@ -98,10 +99,10 @@ while True:
 		unit_vector_1 = center1 / np.linalg.norm(center1)
 		unit_vector_2 = center2 / np.linalg.norm(center2)
 		dot_product = np.dot(unit_vector_1, unit_vector_2)
-		angle = np.arccos(dot_product)
-
+		angleRad = np.arccos(dot_product)
+		angleDeg = np.degrees([angleRad])
 		# Envia o Angulo via UDP
-		udp.sendto(str(angle).encode(), destination)
+		udp.sendto(str(angleDeg[0]).encode(), destination)
 
 		# Um debug do angulo na tela (não use sempre pq deixa as coisas lentas pra caramba)
 
