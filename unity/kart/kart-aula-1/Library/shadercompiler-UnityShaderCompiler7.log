@@ -1,0 +1,125 @@
+Base path: '/Applications/Unity/Hub/Editor/2019.4.1f1/Unity.app/Contents', plugins path '/Applications/Unity/Hub/Editor/2019.4.1f1/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=14 insize=18731 outsize=11282 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=9370 outsize=16164 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=1505 outsize=1199 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=5032 outsize=7304 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=7960 outsize=3081 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=3214 outsize=3699 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=9919 outsize=3363 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2923 outsize=4344 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2957 outsize=4393 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=6546 outsize=3420 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=3930 outsize=6709 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 14 at Tensor.cginc(141): use of potentially uninitialized variable (ReadonlyTensor::SafeGet)
+  api=14 insize=47665 outsize=4778 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=47665 outsize=3067 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=47665 outsize=3263 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=47665 outsize=3290 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=47665 outsize=3727 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=47665 outsize=3759 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=47665 outsize=3906 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=47665 outsize=4658 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=5241 outsize=7814 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=3576 outsize=3675 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=3883 outsize=4221 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=4146 outsize=4892 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=3588 outsize=3664 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=4609 outsize=5852 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=4203 outsize=5106 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=3578 outsize=3682 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=3760 outsize=4031 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=2120 outsize=1472 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=68835 outsize=5896 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=13802 outsize=26760 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=3386 outsize=5934 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=5591 outsize=6993 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=2151 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=2087 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=1622 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=2231 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=2077 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=2077 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=2135 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=2248 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=2895 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=2677 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=2730 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=2655 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=29386 outsize=2695 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2311 outsize=2313 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2449 outsize=2444 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2598 outsize=2705 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=1481 outsize=1562 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2761 outsize=3419 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=3029 outsize=3754 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2967 outsize=3537 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2843 outsize=3338 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=2848 outsize=3514 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=31899 outsize=8584 ok=1
+Cmd: translateComputeKernel
+  api=14 insize=4913 outsize=8991 ok=1
+Cmd: compileComputeKernel
+  api=14 insize=4119 outsize=2757 ok=1
+Cmd: compileSnippet
+  api=14 type=0 insize=2104 outsize=2388 kw=DIRECTIONAL UNITY_HDR_ON pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=14 type=0 insize=2104 outsize=2388 kw=DIRECTIONAL SHADOWS_SCREEN UNITY_HDR_ON pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=14 type=1 insize=2104 outsize=6808 kw=DIRECTIONAL SHADOWS_SCREEN UNITY_HDR_ON pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
