@@ -10,6 +10,7 @@ import imutils
 import time
 import heapq
 import socket
+import struct
 
 # Range de cores a menor e a maior
 greenLower = (29, 86, 6)
@@ -96,13 +97,28 @@ while True:
 		cv2.line(frame, center1, center2, (0, 0, 255), 5)
 
 		# calculo do angulo entre o centro1 e o centro2
-		unit_vector_1 = center1 / np.linalg.norm(center1)
-		unit_vector_2 = center2 / np.linalg.norm(center2)
-		dot_product = np.dot(unit_vector_1, unit_vector_2)
-		angleRad = np.arccos(dot_product)
-		angleDeg = np.degrees([angleRad])
+
+		unit_vector_1 = (abs(center1[0] - center2[0]), abs(center1[1] - center2[1]))
+		# unit_vector_2 = (0 , 10)
+		#
+		# print(unit_vector_1)
+		#
+		# # unit_vector_1 = center1 / np.linalg.norm(center1)
+		# # unit_vector_2 = center2 / np.linalg.norm(center2)
+		# dot_product = np.dot(unit_vector_1, unit_vector_2)
+		#
+		# angleRad = np.arccos(dot_product)
+		# angleDeg = np.degrees([angleRad])
+
+		# send = str(unit_vector_1[0] + "")
 		# Envia o Angulo via UDP
-		udp.sendto(str(angleDeg[0]).encode(), destination)
+		x1 = center1[0] - center2[0]
+		y1 = center1[1] - center2[1]
+		angle_struct = struct.pack('!ii', x1, y1)
+		# Notice the ! sign for network endianness.
+
+		udp.sendto(angle_struct , destination)
+		# udp.sendto(str(unit_vector_1).encode(), destination)
 
 		# Um debug do angulo na tela (não use sempre pq deixa as coisas lentas pra caramba)
 
