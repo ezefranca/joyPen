@@ -1,4 +1,4 @@
-# python ball_tracking.py
+# python color_tracking.py
 
 # import the necessary packages
 from collections import deque
@@ -11,6 +11,8 @@ import time
 import heapq
 import socket
 import struct
+from pynput.keyboard import Key, Controller
+import time
 
 # Range de cores a menor e a maior
 greenLower = (29, 86, 6)
@@ -19,7 +21,7 @@ greenUpper = (64, 255, 255)
 pts = deque(maxlen=2)
 
 vs = VideoStream(src=0).start()
-
+keyboard = Controller()
 # configura as coisas para enviar os dados via socket UDP
 # se quiser testar sem utilizar unity pode usar este servidor aqui: https://github.com/ezefranca/socket-demo
 
@@ -114,6 +116,24 @@ while True:
 		# Envia o Angulo via UDP
 		x1 = center1[0] - center2[0]
 		y1 = center1[1] - center2[1]
+
+		v1 = (x1, y1)
+		v2 = (1, 0)
+		angle = np.dot (v1 , v2)
+
+		if (angle > -10) and (angle < 10):
+			print('stop')
+			keyboard.release ( Key.left )
+			keyboard.release ( Key.right )
+		elif angle > 10:
+			print('right')
+			keyboard.press ( Key.right )
+			time.sleep ( 0.01 )
+		elif angle < -10:
+			print('left')
+			keyboard.press ( Key.left )
+			time.sleep ( 0.01 )
+
 		angle_struct = struct.pack('!ii', x1, y1)
 		# Notice the ! sign for network endianness.
 
