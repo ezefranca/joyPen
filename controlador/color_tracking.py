@@ -63,6 +63,7 @@ while True:
 
 	# Só continua se tiver ao menos 2 pq senão não tem como calcular o angulo
 	if len(cnts) > 2:
+		keyboard.press ( Key.up )
 		# Digamos que temos vários pontos, vamos pegar aqui os dois maiores e criar um circulo no centro
 
 		sensors = cnts
@@ -154,6 +155,8 @@ while True:
 		# 			fontScale,
 		# 			fontColor,
 		# 			lineType)
+	else:
+		keyboard.release ( Key.up )
 
 	# Uma linha branca para debug
 	cv2.line(frame, center1, center2, (255, 255, 255), 1)
