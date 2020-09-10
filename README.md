@@ -1,10 +1,16 @@
 ## Mestrado profissional em Desenvolvimento de Jogos Digitais (PUC-SP)
-![](https://raw.githubusercontent.com/ezefranca/Damas/master/logo_mestrado.png)
+
+<p align="center">
+<img class="mestrado" src="https://raw.githubusercontent.com/ezefranca/Damas/master/logo_mestrado.png" width="30%" height="30%">
+</p>
+
 # JoyPen
 ### Disciplina: Laboratório 1 
 ### Professor Dr. Reinaldo Augusto de Oliveira Ramos
 
-![](https://github.com/ezefranca/joyPen/blob/master/Design/Imagens/logo05.png)
+<p align="center">
+<img class="mestrado" src="https://raw.githubusercontent.com/ezefranca/JoyPen/master/design/logo05.png" width="70%" height="70%">
+</p>
 
 ### Desafio
 
